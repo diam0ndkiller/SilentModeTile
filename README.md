@@ -6,3 +6,7 @@ This projects was created using AI, so no license is being applied.
 
 ## Setup
 In order to use the tile, go to *Settings > Apps > Special app access > Modes access* an enable access for `Silent Mode Tile`.
+
+## Credits
+Material Design Icons from https://creazilla.com (Apache 2.0 License)
+Source https://github.com/material-icons/material-icons / https://github.com/Templarian/MaterialDesign
