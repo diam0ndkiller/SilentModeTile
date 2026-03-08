@@ -8,10 +8,7 @@ import android.service.quicksettings.TileService;
 import android.content.Context;
 import android.util.Log;
 
-import java.util.Arrays;
-
 public class SilentModeTile extends TileService {
-    public final String TAG = "CustomLogger";
 
     @Override
     public void onClick() {
@@ -53,7 +50,7 @@ public class SilentModeTile extends TileService {
     private final int[] MODE_VIBRATE = {AudioManager.RINGER_MODE_VIBRATE, NotificationManager.INTERRUPTION_FILTER_ALL, Tile.STATE_INACTIVE, R.drawable.vibrate};
     private final int[] MODE_PRIORITY = {AudioManager.RINGER_MODE_VIBRATE, NotificationManager.INTERRUPTION_FILTER_PRIORITY, Tile.STATE_ACTIVE, R.drawable.dnd};
     private final int[] MODE_FULLMUTE = {AudioManager.RINGER_MODE_SILENT, NotificationManager.INTERRUPTION_FILTER_NONE, Tile.STATE_ACTIVE, R.drawable.mute};
-    private int[][] MODES = {MODE_NORMAL, MODE_VIBRATE, MODE_PRIORITY, MODE_FULLMUTE};
+    private final int[][] MODES = {MODE_NORMAL, MODE_VIBRATE, MODE_PRIORITY, MODE_FULLMUTE};
 
 
     private void setNextMode(AudioManager am, NotificationManager nm) {

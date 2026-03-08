@@ -4,6 +4,7 @@
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
 
     <application
+        android:icon="@drawable/dnd"
         android:label="Silent Mode Tile">
 
         <service
